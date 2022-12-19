@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array methods</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <table>
+            <caption>Array Methods</caption>
+            <tr>
+                <th>S.NO</th>
+                <th>METHODS</th>
+                <th>DESCRIPTION</th>
+                <th>INPUT</th>
+                <th>OUTPUT</th>
+                <th>PROGRAM</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>concat()</td>
+                <td>It is used to merge <br>
+                    two or more arrays.<br>
+                    This method does not change <br>
+                    the existing arrays, but <br>
+                    instead returns a new array.</td>
+                <td>let a1=[1,2,3]<br>
+                    let a2=[4,5]<br>
+                    let a3=a1.concat(a2)</td>
+                <td>a3=[1,2,3,4,5]</td>
+                <td>let a1=[1,2,3]<br>
+                    let a2=[4,5]<br>
+                    let a3=a1.concat(a2)<br>
+                    document.write(a3)</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>entries</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>filter</td>
+                <td>The filter() method creates a shallow copy of a portion of a given array,<br>
+                     filtered down to just the elements from the given array<br>
+                     that pass the test implemented by the provided function.</td>
+                <td>let number=[34,4,65,12,78]<br>
+                    let result=number.filter((value)=> {<br>
+                    return value > 50;});<br>
+                    </td>
+                <td>[65,78]</td>
+                <td>let number=[34,4,65,12,78]<br>
+                    let result=number.filter((value)=> {<br>
+                    return value > 50;});<br>
+                    console.log(result)</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>find</td>
+                <td>The find() method returns the first element in the provided array that<br>
+                     satisfies the provided testing function.
+                     If no values satisfy the testing function, undefined is returned.</td>
+                <td>let number=[34,4,65,12,78]
+                    let result=number.find((value)=> {
+                    return value > 50;});</td>
+                <td>65</td>
+                <td>let number=[34,4,65,12,78]
+                    let result=number.filter((value)=> {
+                    return value > 50;});
+                    console.log(result)</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>findindex</td>
+                <td>The findIndex() method returns the index of the first element in an array
+                     that satisfies the provided testing function.
+                     If no elements satisfy the testing function, -1 is returned.</td>
+                <td>let number=[34,4,65,12,78]
+                    let result=number.findIndex((value)=> {
+                    return value > 50;});</td>
+                    <td>2</td>
+                <td>let number=[34,4,65,12,78]
+                    let result=number.findIndex((value)=> {
+                    return value > 50;});
+                    console.log(result)</td>
+                    
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>findLastIndex</td>
+                <td>The findLastIndex() method iterates the array in reverse order and returns the index
+                    of the first element that satisfies the provided testing function.
+                     If no elements satisfy the testing function, -1 is returned.</td>
+                <td>let number=[34,4,65,12,78]<br>
+                    let result=number.findLastIndex((value)=> {
+                    return value > 50;});</td>
+                <td>4</td>
+                <td>let number=[34,4,65,12,78]
+                    let result=number.findLastIndex((value)=> {
+                    return value > 50;});</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>indexof</td>
+                <td>The indexOf() method returns the first index at which a given element
+                     can be found in the array
+                    , or -1 if it is not present.</td>
+                <td>const number=[1,2,3,4]	
+                    console.log(number.indexOf(2));
+                    </td>
+                <td>1</td>
+                <td>const number=[1,2,3,4]				
+                    console.log(number.indexOf(2));
+                </td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>LastIndexOf</td>
+                <td>The lastIndexOf() method returns the last index at which a given element 
+                    can be found in the array, or -1 if it is not present.
+                     The array is searched backwards, starting at fromIndex.</td>
+                <td>const number=[1,2,3,4]	
+                    console.log(number.lastIndexOf(2))</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>map</td>
+                <td>The map() method creates a new array populated with the results of calling
+                     a provided function on every element in the calling array.</td>
+                <td>const number=[34,4,65,12,78]
+                    let result=number.map((value)=> {
+                        return value+40;});
+                    </td>
+                <td>[false,false,true,false,true]</td>
+                <td>const number=[34,4,65,12,78]
+                    let result=number.map((value)=> {
+                        return value+40;});
+                    console.log(result)</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>pop</td>
+                <td>The pop() method removes the last element from an array and returns that element.
+                     This method changes the length of the array.</td>
+                <td>const number=[1,2,3,4]					
+                    number.pop()</td>
+                <td>[1,2,3]</td>
+                <td>const number=[1,2,3,4]						
+                    number.pop()
+                    console.log(number)</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>push</td>
+                <td>The push() method adds one or more elements to the end of an array
+                     and returns the new length of the array.</td>
+                <td>const number=[1,2,3,4]					
+                    number.push()</td>
+                <td>[1,2,3,4,5]</td>
+                <td>const number=[1,2,3,4];				
+                    number.push(5);
+                    console.log(number)</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>reduce</td>
+                <td>The reduce() method executes a user-supplied "reducer" callback function on each 
+                    element of the array, in order, passing in the return value from the calculation 
+                    on the preceding element. The final result of running the 
+                    reducer across all elements of the array is a single value.</td>
+                <td>const m=[34,4,65,12,78]
+                    let n=m.reduce((acc,value)=> {
+                        return acc + value;
+                    });</td>
+                <td>193</td>
+                <td>const m=[34,4,65,12,78]
+                    let n=m.reduce((acc,value)=> {
+                        return acc + value;
+                    });
+                    console.log(n)</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>reverse</td>
+                <td>The reverse() method reverses an array in place and returns the reference to the same
+                     array, the first array element now becoming the last, and the last array element
+                      becoming the first. In other words, elements order in the array will be turned towards 
+                    the direction opposite to that previously stated.</td>
+                <td>var a=[1,2,3,4,5]</td>
+                <td>[]5,4,3,2,1]</td>
+                <td>var a=[1,2,3,4,5]				
+                    console.log(a.reverse())</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>shift</td>
+                <td>The shift() method removes the first element from an array and returns that removed element.
+                     This method changes the length of the array.</td>
+                <td>const number=[1,2,3,4]
+                    number.shift(5)</td>
+                <td>[2,3,4]</td>
+                <td>const p=[1,2,3,4]
+                    p.shift(5)
+                    console.log(p)</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>slice</td>
+                <td>The slice() method returns a shallow copy of a portion of an array into a new array 
+                    object selected from start to end (end not included) where start and end represent the index of items in that array. 
+                    The original array will not be modified.</td>
+                <td>const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];</td>
+                <td>["camel", "duck"]</td>
+                <td>const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
+                    console.log(animals.slice(2, 4));</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>toString</td>
+                <td>The toString() method returns a string representing the specified array and its elements.</td>
+                <td>const array1 = [1, 2, 'a', '1a'];</td>
+                <td>1,2,a,1a</td>
+                <td>const array1 = [1, 2, 'a', '1a'];
+                    console.log(array1.toString());</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>unshift</td>
+                <td>The unshift() method adds one or more elements to the beginning of an
+                     array and returns the new length of the array.</td>
+                <td>const r=[1,2,3,4]
+                    r.unshift(5)</td>
+                <td>[5,1,2,3,4]</td>
+                <td>const r=[1,2,3,4]
+                    r.unshift(5)
+                    console.log(r)</td>
+            </tr>
+        </table>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
